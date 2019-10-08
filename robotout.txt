@@ -1,0 +1,30 @@
+/*
+Beth Lynn Eicher
+Psuedocode: Robot leaves the room.
+
+A robot is in the middle of a room. The objective is to write general instructions for the robot to leave the room. There is at least one door that swings outward.
+The robot cannot create or destroy its surroundings.
+The robot can detect if there is an object in the adjancent square foot.
+The robot locomotion is two dimensional. It does not fly.
+
+I imagine that the robot is on a x,y axis at the orgin position where "forward/backward" is increments and decrements y respectfully. Also, x position change is "left/right" which decrements and increments respectfuflly.
+*/
+
+Do until OUT:
+	1. Observe current position:
+		Is there a door?
+		Is there a wall?
+		Is there an object?
+		If no door, wall, or other object, mark the area is clear.
+		Record findings.
+	2. When door is observed:
+		move to the center of the door.
+		push to open door.
+		leave through door.
+		you are OUT
+	3. Move in the following priority given the current record of position:
+		when clear, move forward.
+		turn right, 
+		go to step 1 	
+OUT.
+wonderful. the robot is out of the room. goal won.
